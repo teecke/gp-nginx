@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  statics:
+    image: teecke/gp-nginx:0.1.0
+    ports:
+      - 8090:80
+    volumes:
+      - ./statics:/var/www/html:ro
+    restart: unless-stopped
+      
+networks:
+    default:
+      external:
+        name: platform_products
+
+volumes:
+  app:
