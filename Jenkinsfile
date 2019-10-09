@@ -3,7 +3,7 @@
 @Library('github.com/teecke/jenkins-pipeline-library@v3.4.1') _
 
 // Initialize global config
-cfg = jplConfig('gp-nginx', 'docker', '', [email:'pedroamador.rodriguez+teecke@gmail.com'])
+cfg = jplConfig('gp-nginx', 'docker', '', [email: env.CITEECKE_NOTIFY_EMAIL_TARGETS])
 
 def publishDockerImage() {
     nextReleaseNumber = sh (script: "kd get-next-release-number .", returnStdout: true).trim().substring(1)
