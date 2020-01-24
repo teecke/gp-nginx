@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.2.1 (2020-01-24)
+
+### Update
+
+* Review devcontrol scripts ([b88a49f](https://github.com/teecke/gp-nginx/commit/b88a49f))
+
+### Build
+
+* Update Auto Release Log adding v0.2.1 info with JPL ([adabff4](https://github.com/teecke/gp-nginx/commit/adabff4))
+
+### Docs
+
+* Generate v0.2.0 changelog with JPL ([2c6faf2](https://github.com/teecke/gp-nginx/commit/2c6faf2))
+
 ## v0.2.0 (2020-01-24)
 
 ### New
