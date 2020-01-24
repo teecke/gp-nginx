@@ -23,9 +23,10 @@ function run-bash-linter() {
     helpMessage=$(cat <<EOF
 Run shellckheck test over the following scripts:
 
-* devcontrol/actions/run-bash-linter.sh
-* devcontrol/global/startup.sh
-* scripts/teecke-docker/srv/scripts/backup.sh
+* devcontrol/actions/*.sh
+* devcontrol/global/*.sh
+* */backup
+* */cleanup
 EOF
 )
 
@@ -39,7 +40,7 @@ EOF
             ;;
         exec)
             exitCode=0
-            for file in $(ls devcontrol/actions/*.sh) devcontrol/global/startup.sh statics/backup statics/cleanup; do
+            for file in devcontrol/actions/*.sh devcontrol/global/*.sh */backup */cleanup; do
                 echo -n "Running shellcheck bash linter over ${file}..."
                 failed=0
                 docker run --network none -i --rm --workdir /workspace -v "$(pwd)":/workspace koalaman/shellcheck-alpine shellcheck -x "${file}" || failed=1

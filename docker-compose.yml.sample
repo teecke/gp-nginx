@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   statics:
-    image: teecke/gp-nginx:0.2.0
+    image: teecke/gp-nginx:0.2.1
     ports:
       - 8090:80
     volumes:
