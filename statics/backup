@@ -1,3 +1,6 @@
 #!/bin/sh
-mkdir -p /var/backups/gp/webapp/usr/share/nginx/html
-rsync -a --delete /usr/share/nginx/html/ /var/backups/gp/webapp/usr/share/nginx/html/
+
+set -eu
+
+mkdir -p /var/backups/gp/nginx
+rsync -a --relative --delete /usr/share/nginx/html/ /var/backups/gp/nginx/
