@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.2.3 (2020-02-25)
+
+### Update
+
+* Add build key to docker-compose ([4763ba2](https://github.com/teecke/gp-nginx/commit/4763ba2))
+
+### Build
+
+* Update Auto Release Log adding v0.2.3 info with JPL ([db95003](https://github.com/teecke/gp-nginx/commit/db95003))
+* Typo in Dockerfile directory name ([c5176e6](https://github.com/teecke/gp-nginx/commit/c5176e6))
+* Hardcode the docker build directory ([a8f2e32](https://github.com/teecke/gp-nginx/commit/a8f2e32))
+
+### Docs
+
+* Generate v0.2.2 changelog with JPL ([744c749](https://github.com/teecke/gp-nginx/commit/744c749))
+
 ## v0.2.2 (2020-02-25)
 
 ### Update
