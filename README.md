@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/gp-nginx
+Please visit https://github.com/ayudadigital/gp-nginx
 
 # Generic Platform - Nginx Statics Server
 
